@@ -1,0 +1,12 @@
+// Private information ommitted in git repository
+{
+  "port":8000,
+  "db": {
+    "hostname":"127.0.0.1",
+    "db":"",
+    "username":"",
+    "password":""
+  },
+  "ua_key":"",
+  "ip_key":""
+}
