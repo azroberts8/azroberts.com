@@ -20,7 +20,7 @@ document.onreadystatechange = function() {
 	}
 }
 
-fetch("/assets/images/images.json")
+fetch("assets/images/images.json")
 .then(res => res.json())
 .then(res => {
 	Array.prototype.forEach.call(document.getElementsByClassName("card"), card => {
@@ -43,10 +43,10 @@ fetch("/assets/images/images.json")
 		if(e.tagName === 'IMG') {
 			const img = new Image();
 			img.addEventListener('load', () => {
-				e.setAttribute('src', `/assets/images/${ e.getAttribute('img-id') }`);
+				e.setAttribute('src', `assets/images/${ e.getAttribute('img-id') }`);
 				e.style.filter = 'blur(0px)';
 			});
-			img.src = `/assets/images/${ e.getAttribute('img-id') }`;
+			img.src = `assets/images/${ e.getAttribute('img-id') }`;
 		}
 	});
 	Array.prototype.forEach.call(document.getElementsByClassName("photoGrid"), collections => {
@@ -54,10 +54,10 @@ fetch("/assets/images/images.json")
 			const e = photo.firstElementChild;
 			const img = new Image();
 			img.addEventListener('load', () => {
-				e.style.backgroundImage = `url('/assets/images/${ photo.getAttribute('img-id') }')`;
+				e.style.backgroundImage = `url('assets/images/${ photo.getAttribute('img-id') }')`;
 				e.style.filter = 'blur(0px)';
 			});
-			img.src = `/assets/images/${ photo.getAttribute('img-id') }`;
+			img.src = `assets/images/${ photo.getAttribute('img-id') }`;
 		});
 	});
 });
