@@ -231,20 +231,25 @@ i.chevron {
     border-width: 0 2px 2px 0;
 }
 
-/* Introduction */
 .story {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: calc(var(--element-reference) / 11.09) 0;
+    padding: calc(var(--element-reference) / 29.03) 0;
 }
+
+.story .chapter {
+    margin: calc(var(--element-reference) / 17.94) auto 0;
+}
+
+/* Introduction */
 
 .story .intro {
     display: grid;
     position: relative;
     width: 85vw;
     height: 52.5vw;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
 }
@@ -278,6 +283,45 @@ i.chevron {
     font: 400 1.24vw 'Roboto', sans-serif;
     line-height: 2vw;
     padding: 0 0 0 3.75vw;
+}
+
+/* Interests */
+.story .interests {
+    display: block;
+    position: relative;
+    width: 85vw;
+    height: 20.06vw;
+    /*margin: 0 auto;*/
+    /*grid-template-rows: 100%;*/
+}
+
+.interests h1 {
+    display: block;
+    color: var(--primary-solid);
+    font: 700 3vw 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.interests .cards {
+    display: grid;
+    width: 100%;
+    margin: calc(var(--element-reference) / 29.03) 0 0;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.interests img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+}
+
+.interests h2 {
+    display: table;
+    margin: calc(var(--element-reference) / 76) auto;
+    font: 300 1.7vw 'Roboto', sans-serif;
+    color: var(--primary-solid);
 }
 
 
