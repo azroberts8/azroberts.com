@@ -300,7 +300,7 @@ i.chevron {
     color: var(--primary-solid);
     font: 700 3vw 'Heebo', sans-serif;
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
 .interests .cards {
@@ -320,9 +320,62 @@ i.chevron {
 .interests h2 {
     display: table;
     margin: calc(var(--element-reference) / 76) auto;
-    font: 300 1.7vw 'Roboto', sans-serif;
+    font: 400 1.5vw 'Roboto', sans-serif;
     color: var(--primary-solid);
 }
+
+/* Skills */
+.story .skills {
+    display: block;
+    position: relative;
+    width: 85vw;
+    height: 52.5vw;
+}
+
+.skills h1 {
+    display: block;
+    color: var(--primary-solid);
+    font: 700 3vw 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .cards {
+    display: grid;
+    width: 100%;
+    margin: calc(var(--element-reference) / 29.03) 0 0;
+    grid-template-columns: 100%;
+}
+
+.skills .card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 24% 76%;
+}
+
+.skills .card h3 {
+    display: block;
+    color: var(--primary-solid);
+    float: right;
+}
+
+.skills .card p {
+    display: block;
+    color: var(--primary-solid);
+    float: right;
+}
+
+.skills .card .meter {
+    width: 100%;
+}
+
+.skills .card .meter div {
+    background-color: var(--primary-solid);
+    height: 100%;
+}
+
+
+
 
 
 /* View Breakpoints */
