@@ -244,23 +244,16 @@ i.chevron {
 
 /* Introduction */
 
-.story .intro {
+.intro {
     display: grid;
     position: relative;
     width: 85vw;
     height: 52.5vw;
-    /*margin: 0 auto;*/
     grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
 }
 
-.story .intro .wrap {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.intro .wrap img {
+.intro img {
     display: block;
     width: auto;
     height: auto;
@@ -269,7 +262,7 @@ i.chevron {
     margin: 0 auto;
 }
 
-.intro .wrap h1 {
+.intro h1 {
     display: block;
     color: var(--primary-solid);
     font: 700 4.8vw 'Heebo', sans-serif;
@@ -277,7 +270,7 @@ i.chevron {
     padding: 0 0 0 3.75vw;
 }
 
-.intro .wrap p {
+.intro p {
     display: block;
     color: var(--primary-solid);
     font: 400 1.24vw 'Roboto', sans-serif;
@@ -286,92 +279,26 @@ i.chevron {
 }
 
 /* Interests */
-.story .interests {
-    display: block;
-    position: relative;
-    width: 85vw;
-    height: 20.06vw;
-    /*margin: 0 auto;*/
-    /*grid-template-rows: 100%;*/
-}
-
-.interests h1 {
-    display: block;
-    color: var(--primary-solid);
-    font: 700 3vw 'Heebo', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.interests .cards {
+.interests {
     display: grid;
-    width: 100%;
-    margin: calc(var(--element-reference) / 29.03) 0 0;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.interests img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    width: 50%;
-}
-
-.interests h2 {
-    display: table;
-    margin: calc(var(--element-reference) / 76) auto;
-    font: 400 1.5vw 'Roboto', sans-serif;
-    color: var(--primary-solid);
-}
-
-/* Skills */
-.story .skills {
-    display: block;
     position: relative;
     width: 85vw;
     height: 52.5vw;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
 }
 
-.skills h1 {
-    display: block;
-    color: var(--primary-solid);
-    font: 700 3vw 'Heebo', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.skills .cards {
+.cards {
     display: grid;
     width: 100%;
-    margin: calc(var(--element-reference) / 29.03) 0 0;
-    grid-template-columns: 100%;
-}
-
-.skills .card {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 24% 76%;
-}
-
-.skills .card h3 {
-    display: block;
-    color: var(--primary-solid);
-    float: right;
-}
-
-.skills .card p {
-    display: block;
-    color: var(--primary-solid);
-    float: right;
-}
-
-.skills .card .meter {
-    width: 100%;
-}
-
-.skills .card .meter div {
-    background-color: var(--primary-solid);
     height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.2vw;
+}
+
+.cards div {
+    grid-column: span 2;
 }
 
 
