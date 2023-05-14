@@ -1,1 +1,0 @@
-deno run --allow-net --allow-read=./static,settings.json mod.ts
