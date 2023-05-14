@@ -349,7 +349,6 @@ main .wrapper.photo .intro p {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: filter 0.2s;
-    filter: blur(1vw);
     width: auto;
     height: auto;
     max-width: 100%;
@@ -468,6 +467,10 @@ main .wrapper.photo .intro p {
     display: block;
     overflow: hidden;
     background-color: #f2f2f2;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .collection .photoGrid .photo div {
@@ -476,7 +479,6 @@ main .wrapper.photo .intro p {
     background-repeat: no-repeat;
     background-position: center;
     margin: -0.5vw;
-    filter: blur(1vw);
     height: calc(100% + 1vw);
     transition: filter 0.25s;
 }
