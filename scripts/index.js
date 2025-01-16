@@ -14,7 +14,7 @@ document.onreadystatechange = function() {
 		setTimeout(function() {
 			const splashTranslation = getComputedStyle(document.getElementById("splashImg")).transform;
 			document.addEventListener("scroll", function() {
-				(window.scrollY > 0) ? document.getElementById("splashImg").style.transform = splashTranslation + " translateY(-" + window.scrollY/4 + "px)" : document.getElementById("splashImg").style.transform = splashTranslation + " translateY(" + Math.abs(window.scrollY)/4 + "px)" ;
+				(window.scrollY > 0) ? document.getElementById("splashImg").style.transform = splashTranslation + " translateY(" + window.scrollY/4 + "px)" : document.getElementById("splashImg").style.transform = splashTranslation + " translateY(" + Math.abs(window.scrollY)/4 + "px)" ;
 			});
 		}, 200);
 	}

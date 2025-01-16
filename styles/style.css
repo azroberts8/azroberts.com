@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Roboto:wght@300;400;700&display=swap');
+@font-face {
+    font-family: "Chronicle Display";
+    src: url("../Chronicle-Display-Roman.otf");
+}
 
 :root {
     --primary-solid: #fdfdfd;
@@ -124,7 +128,7 @@ main .wrapper {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: calc(var(--element-reference) / 6.8535) 0;
+/*    padding: calc(var(--element-reference) / 6.8535) 0;*/
 }
 
 main .wrapper.photo {
@@ -195,7 +199,10 @@ main .wrapper.dev {
 
 svg.title text {
     fill: var(--primary-solid);
-    font: 700 85px 'Heebo', sans-serif;
+    /* font: 300 85px "Chronicle Display", serif; */
+   /* font: 700 85px 'Heebo', sans-serif; */
+   font: 700 85px 'Roboto', sans-serif;
+   letter-spacing: -1%;
 }
 
 svg.title text::selection {
@@ -282,7 +289,7 @@ main .wrapper .intro {
     display: block;
     position: relative;
     width: 85vw;
-    height: 51vw;
+    height: 32vw;
     margin: 0 auto;
     padding: 0;
 }
@@ -292,7 +299,10 @@ main .wrapper .intro h1 {
     position: absolute;
     bottom: 38%;
     width: 42.5vw;
-    font: 700 4.8vw 'Heebo', sans-serif;
+    /* font: 400 4.8vw 'Chronicle Display', serif; */
+/*    font: 700 4.8vw 'Heebo', sans-serif;*/
+    font: 700 4.8vw 'Roboto', sans-serif;
+    letter-spacing: -1%;
     margin: 0;
     padding: 0;
 }
@@ -309,9 +319,9 @@ main .wrapper .intro p {
     display: block;
     position: absolute;
     top: 62%;
-    width: 42.5vw;
-    font: 400 1.105vw 'Roboto', sans-serif;
-    line-height: 1.7vw;
+    width: 52vw;
+    font: 400 11.5pt 'Roboto', sans-serif;
+    line-height: 1.5em;
 }
 
 main .wrapper.dev .intro p {
@@ -366,20 +376,23 @@ main .wrapper.photo .intro p {
 .story .card h2 {
     display: block;
     margin: 0;
-    padding: 13.5vw 0 2.36vw 8.5vw;
-    font: 700 3vw 'Heebo', sans-serif;
+    padding: 13.5vw 0 2.36vw 5vw;
+    /* font: 400 3vw 'Libre Caslon Display', serif; */
+/*    font: 700 3vw 'Heebo', sans-serif;*/
+    font: 700 3vw 'Roboto', sans-serif;
+    letter-spacing: -1%;
 }
 
 .story .card:nth-child(odd) h2 {
-    padding: 13.5vw 8.5vw 2.36vw 0;
+    padding: 13.5vw 5.5vw 2.36vw 0;
 }
 
 .story .card p {
     display: block;
     margin: 0;
-    padding: 0 0 0 8.5vw;
-    font: 400 1.105vw 'Roboto', sans-serif;
-    line-height: 1.7vw;
+    padding: 0 0 0 5vw;
+    font: 400 11.5pt 'Roboto', sans-serif;
+    line-height: 1.5em;
 }
 
 .story .card a {
@@ -401,7 +414,7 @@ main .wrapper.photo .intro p {
 }
 
 .story .card:nth-child(odd) p {
-    padding: 0 8.5vw 0 0;
+    padding: 0 5vw 0 0;
 }
 
 .story .card:nth-child(even) a {
@@ -584,7 +597,7 @@ main .wrapper.photo .intro p {
 
     .story .card p {
         padding: 0;
-        font: 400 3.7vw 'Roboto', sans-serif;
+        font: 400 11.5pt 'Roboto', sans-serif;
         line-height: 5.7vw;
     }
 
