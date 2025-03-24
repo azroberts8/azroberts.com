@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101010;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container .bar {
+    width: 100%;
+    padding: 24pt 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 24pt;
+    width: 24pt;
+}
+
+.hamburger .ln {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #fdfdfd;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    will-change: transform, opacity;
+}
+
+.hamburger.x .ln1 {
+    transform: rotate(-45deg) translate(-2px, 8px);
+}
+
+.hamburger.x .ln2 {
+    opacity: 0;
+}
+
+.hamburger.x .ln3 {
+    transform: rotate(45deg) translate(-2px, -8px);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    align-items: end;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+nav a {
+    padding: 12pt 0;
+    color: #fdfdfd;
+    text-decoration: none;
+    font: 400 12pt 'Roboto', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
