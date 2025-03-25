@@ -23,7 +23,7 @@ body {
     flex-direction: column;
 }
 
-.header-container .bar {
+.header-container>.bar {
     width: 100%;
     padding: 24pt 0;
     display: flex;
@@ -37,7 +37,7 @@ body {
     width: 24pt;
 }
 
-.hamburger .ln {
+.hamburger>.ln {
     display: block;
     width: 25px;
     height: 2px;
@@ -47,15 +47,15 @@ body {
     will-change: transform, opacity;
 }
 
-.hamburger.x .ln1 {
+.hamburger.x>.ln1 {
     transform: rotate(-45deg) translate(-2px, 8px);
 }
 
-.hamburger.x .ln2 {
+.hamburger.x>.ln2 {
     opacity: 0;
 }
 
-.hamburger.x .ln3 {
+.hamburger.x>.ln3 {
     transform: rotate(45deg) translate(-2px, -8px);
 }
 
@@ -68,13 +68,33 @@ nav {
     transition: height 0.3s ease-out;
 }
 
-nav a {
+nav>a {
     padding: 12pt 0;
     color: #fdfdfd;
     text-decoration: none;
     font: 400 12pt 'Roboto', sans-serif;
 }
 
-nav a:hover {
+nav>a:hover {
     text-decoration: underline;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 72pt);
+}
+
+#hero>div {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+#hero>div>img {
+    position: relative;
+    left: 20%;
+    height: 86.3%;
+    width: auto;
 }
