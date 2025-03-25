@@ -216,6 +216,21 @@ svg.title text::selection {
     transform: translateY(0.3vw);
 }
 
+.socials {
+    padding-top: 8pt;
+    font-size: 1.7vw;
+}
+
+.fa {
+    color: #fdfdfd;
+    margin-right: 6pt;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #e3ca7f;
+}
+
 .content .subtitle::selection {
     color: var(--secondary-solid);
     background-color: rgba(253, 253, 253, 0.99);
