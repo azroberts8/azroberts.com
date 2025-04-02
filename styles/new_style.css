@@ -13,6 +13,8 @@
     --size-5: 125pt;
     --size-6: 192pt;
     --size-7: 308pt;
+    --size-8: 492pt;
+    --size-9: 787pt;
 }
 
 * {
@@ -29,27 +31,32 @@ body {
 }
 
 h1 {
-    margin: 0;
+    margin: var(--size-1) 0 0;
     font: 700 var(--size-3) 'Roboto', sans-serif;
     letter-spacing: -3%;
+    max-width: var(--size-8);
 }
 
 h2 {
-    margin: 0;
+    margin: var(--size-1) 0 0;
     font: 700 var(--size-2) 'Roboto', sans-serif;
     letter-spacing: -2%;
+    max-width: var(--size-8);
 }
 
 h3 {
     margin: 0;
     font: 700 var(--size-1) 'Roboto', sans-serif;
     letter-spacing: -1%;
+    max-width: var(--size-8);
 }
 
 p {
     margin: 0;
+    padding: var(--size-0) 0 var(--size-2);
     font: 400 var(--size-0) 'Roboto', sans-serif;
     line-height: 1.5em;
+    max-width: var(--size-8);
 }
 
 .light {
@@ -70,7 +77,12 @@ p {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 24pt;
+    padding: var(--size-3) 24pt 0;
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .link {
@@ -257,4 +269,16 @@ i.chevron {
     transform: translateX(-50%) rotate(45deg);
     border: solid var(--light-primary);
     border-width: 0 2px 2px 0;
+}
+
+.job-experience {
+    padding-top: var(--size-2);
+    font: 400 var(--size-0) 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
+
+.company-logo {
+    height: var(--size-3);
+    width: var(--size-3);
+    margin: 0 var(--size-1);
 }

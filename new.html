@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="container dark">
-    <div class="section">
+    <div class="section" style="padding: 0 24pt;">
       <div class="header-bar flex-row">
         <img class="logo" src="images/logo.svg" alt="Andrew Roberts logo">
         <div class="hamburger" onclick="toggle(this)">
@@ -51,14 +51,55 @@
     </div>
     <i class="chevron"></i>
   </div>
-  <div class="container">
+  <div class="container light">
     <div id="about" class="section">
       <h1>About</h1>
+      <p>I'm Andrew Roberts, an entrepreneurial software engineer building refined software solutions for incredible businesses. I'm a graduate of the University of Delaware College of Engineering with over 5 years of software development and cybersecurity experience building solutions for Citibank, Lutron Electronics and organizations nationwide. I aim to build high-quality scalable software that improves peoples' quality of life.</p>
+      <div class="">
+        <h2>Current Endeavor</h2>
+        <p>I'm currently working on an event discovery and ticketing platform focused on delivering exceptional user experience, intricate customer insights, and reduced fees. See my experience for more on this project.</p>
+      </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container light">
     <div id="experience" class="section">
       <h1>Experience</h1>
+
+      <div class="job-experience flex-row">
+        <img src="images/out-there.png" class="company-logo">
+        <div class="flex-column">
+          <h3>Technical Founder</h3>
+          <div>Out There Events · Newark, DE · Jan 2025 - Present</div>
+          <p>Out There Events is an early stage startup I'm building to redefine the future of event discovery and ticketing for occasions as small as meetups and happy hours, to .. as grand as festivals and sporting events. The vision: the Amazon of events, a marketplace connecting organizers with attendees while eliminating the excessive fees often associated with event ticketing. As the founder I have attended conferences as part of customer discovery as well as spearheaded the development of the platform using SolidJS and am currently assembling a team to take this project further.</p>
+        </div>
+      </div>
+
+      <div class="job-experience flex-row">
+        <img src="images/fndrsng.png" class="company-logo">
+        <div class="flex-column">
+          <h3>Lead Software Engineer</h3>
+          <div>FNDRSNG · Newark, DE · Jun 2024 - Nov 2024</div>
+          <p>At FNDRSNG, a software company dedicated to empowering small and mid-size nonprofits, I lead the development of a client configurable donation system - an opportunity that arose from my technical expertise and entrepreneurial drive being recognized by FNDRSNG's founder and former professor of mine. I architected and built a web application designed to seamlessly integrate with FNDRSNG's broader suite of solutions while minimizing transaction fees. Developed using the Deno Fresh Framework with Firebase as the backend, this platform prioritized resilience, architected such that every transaction was fully accounted for and recoverable in the event of an error to ensure client trust.</p>
+        </div>
+      </div>
+
+      <div class="job-experience flex-row">
+        <img src="images/lutron.png" class="company-logo">
+        <div class="flex-column">
+          <h3>Embedded Firmware Engineer</h3>
+          <div>Lutron Electronics · Austin, TX · Internship · May 2023 - Aug 2023</div>
+          <p>As an embedded firmware engineer at Lutron Electronics, I developed a wireless firmware restoration tool for flashing Ketra devices to a pre-assembly state enhancing production flexibility. To achieve this I modified the firmware of a Silicon Labs based Ketra debugging device to support large data transfer over Openthread. I then developed a C# module that used the debugging device to transmit new firmware to the Ketra devices. Finally, I built a C# application that used the module to pair with Ketra devices and flash pre-assembly firmware along with device calibration data. I conducted over 1000 tests to ensure my solution was robust enough to reset hundreds of devices.</p>
+        </div>
+      </div>
+
+      <div class="job-experience flex-row">
+        <img src="images/citi.png" class="company-logo">
+        <div class="flex-column">
+          <h3>Software Developer</h3>
+          <div>Citi Bank · Tampa, FL · Internship · Jun 2022 - Aug 2022</div>
+          <p>As a software engineer I collaborated with a team to develop and deploy an Angular application utilizing Docker and Jenkins. In pursuit of optimizing business costs, I designed and built an Angular component to replace AG Grid, reducing annual licensing expenses by $80,000 while maintaining functionality and performance.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="container">
