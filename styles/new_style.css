@@ -138,6 +138,9 @@ nav>a:hover {
 nav>a:hover::after {
     font-family: 'Material Symbols Sharp';
     font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
     content: 'chevron_right';
 }
 
@@ -165,4 +168,93 @@ nav>a:hover::after {
 
 .hamburger.x>.ln3 {
     transform: rotate(45deg) translate(-2px, -8px);
+}
+
+.heroWrap {
+    display: block;
+    position: relative;
+    height: calc(100vh - calc(var(--size-2) + calc(var(--size-1) * 2)));
+    width: 100%;
+    background-color: var(--dark-primary);
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding-bottom: 60%;
+}
+
+.splash {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.splash .splashImg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(9vw);
+    width: 86.3vw;
+    height: auto;
+    z-index: -1;
+}
+
+.splash .content {
+    position: absolute;
+    right: 40%;
+    bottom: 50%;
+    width: 45vw;
+    z-index: 1;
+}
+
+.content svg.title {
+    height: auto;
+    width: 100%;
+}
+
+svg.title text {
+    fill: var(--light-primary);
+    font: 700 85px 'Roboto', sans-serif;
+    letter-spacing: -1%;
+}
+
+.content .subtitle {
+    color: var(--light-primary);
+    font: 300 1.7vw 'Roboto', sans-serif;
+    transform: translateY(0.3vw);
+}
+
+.socials {
+    padding-top: 8pt;
+    font-size: 1.9vw;
+}
+
+.fa {
+    color: var(--light-primary);
+    margin-right: 6pt;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #e3ca7f;
+}
+
+i.chevron {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 50pt;
+    padding: 10px;
+    transform: translateX(-50%) rotate(45deg);
+    border: solid var(--light-primary);
+    border-width: 0 2px 2px 0;
 }
