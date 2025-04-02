@@ -2,9 +2,14 @@
 
 :root {
     --light-primary: #fdfdfd;
+    --light-secondary: #efefef;
     --dark-primary: #101010;
+    --dark-secondary: #262626;
     --gold: #e3ca7f;
 
+    --size--3: 2.7pt;
+    --size--2: 4.37pt;
+    --size--1: 7pt;
     --size-0: 11.5pt;
     --size-1: 18.5pt;
     --size-2: 30pt;
@@ -31,7 +36,7 @@ body {
 }
 
 h1 {
-    margin: var(--size-1) 0 0;
+    margin: var(--size-1) 0;
     font: 700 var(--size-3) 'Roboto', sans-serif;
     letter-spacing: -3%;
     max-width: var(--size-8);
@@ -77,7 +82,7 @@ p {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: var(--size-3) 24pt 0;
+    padding: var(--size-4) 24pt 0;
 }
 
 .center {
@@ -109,6 +114,18 @@ p {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.sticker {
+    /* height: calc(var(--size-0 + calc(var(--size--2) * 2))); */
+    height: var(--size-1);
+    border-radius: var(--size--1);
+    margin-right: var(--size--1);
+    user-select: none;
+}
+
+.tags {
+    padding-top: var(--size--3);
 }
 
 /* Specific Elements */
