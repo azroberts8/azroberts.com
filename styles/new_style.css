@@ -117,9 +117,8 @@ p {
 }
 
 .sticker {
-    /* height: calc(var(--size-0 + calc(var(--size--2) * 2))); */
     height: var(--size-1);
-    border-radius: var(--size--1);
+    border-radius: var(--size--2);
     margin-right: var(--size--1);
     user-select: none;
 }
