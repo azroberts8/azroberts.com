@@ -299,3 +299,49 @@ i.chevron {
     width: var(--size-3);
     margin: 0 var(--size-1);
 }
+
+/* Mobile Breakpoints */
+@media screen and (max-width: 600px) {
+    .section {
+        padding: var(--size-3) var(--size-0) 0;
+    }
+
+    .company-logo {
+        margin: 0 var(--size-0) 0 0;
+    }
+
+    .flex-row {
+        overflow: hidden;
+    }
+
+    .hero {
+        padding-bottom: 160%;
+    }
+
+    .splash .splashImg {
+        top: 0px;
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        height: 86.3vh;
+        width: auto;
+        transform: translateX(-50%);
+    }
+
+    .splash .content {
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        bottom: 25%;
+        width: 86.3vw;
+        transform: translateX(-50%);
+    }
+
+    .content .subtitle {
+        font: 300 4.5vw 'Roboto', sans-serif;
+    }
+
+    .socials {
+        font-size: 6.5vw;
+    }
+}
