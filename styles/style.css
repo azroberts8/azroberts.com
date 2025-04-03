@@ -59,7 +59,7 @@ h3 {
 
 p {
     margin: 0;
-    padding: var(--size-0) 0 var(--size-2);
+    padding: var(--size-0) 0 var(--size-0);
     font: 400 var(--size-0) 'Roboto', sans-serif;
     line-height: 1.5em;
     max-width: var(--size-8);
@@ -83,7 +83,7 @@ p {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    padding: var(--size-4) 24pt 0;
+    padding: var(--size-3) 24pt var(--size-3);
 }
 
 .center {
@@ -108,6 +108,7 @@ p {
 .flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -121,12 +122,13 @@ p {
     height: var(--size-1);
     border-radius: var(--size--2);
     margin-right: var(--size--1);
+    margin-top: var(--size--2);
     user-select: none;
 }
 
-.tags {
+/* .tags {
     padding-top: var(--size--3);
-}
+} */
 
 /* Specific Elements */
 
@@ -147,7 +149,7 @@ nav {
     transition: height 0.2s ease-out, margin-bottom 0.2s ease-out;
 }
 
-nav>a {
+nav>a, footer a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,7 +161,7 @@ nav>a {
     border-radius: 4pt;
 }
 
-nav>a:hover {
+nav>a:hover, footer a:hover {
     color: var(--dark-primary);
     background-color: var(--light-primary);
 }
@@ -291,7 +293,7 @@ i.chevron {
 .job-experience {
     padding-top: var(--size-2);
     font: 400 var(--size-0) 'Roboto', sans-serif;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 .company-logo {
@@ -307,11 +309,9 @@ i.chevron {
     }
 
     .company-logo {
-        margin: 0 var(--size-0) 0 0;
-    }
-
-    .flex-row {
-        overflow: hidden;
+        margin: var(--size-0) 0;
+        height: var(--size-4);
+        width: var(--size-4);
     }
 
     .hero {
