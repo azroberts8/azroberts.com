@@ -118,17 +118,18 @@ p {
     height: 100%;
 }
 
+.sticker-row {
+    max-width: var(--size-8);
+}
+
 .sticker {
     height: var(--size-1);
-    border-radius: var(--size--2);
+    border-radius: var(--size--3);
     margin-right: var(--size--1);
     margin-top: var(--size--2);
     user-select: none;
+    padding: 0;
 }
-
-/* .tags {
-    padding-top: var(--size--3);
-} */
 
 /* Specific Elements */
 
